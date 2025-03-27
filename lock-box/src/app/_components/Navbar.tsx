@@ -11,7 +11,9 @@ export default function Navbar() {
         gap: "50px",
     }
     const navTotalStyle = {
+        width: "100%",
         padding: "3rem",
+        position: "fixed",
         height: "10vh",
         display: "flex",
         justifyContent: "space-between",
@@ -54,19 +56,19 @@ export default function Navbar() {
                 <p style={logoText}>LockBox</p>
             </div>
             <div style={navStyle}>
-                <Link className="nav-link" href="#skills">
-                    <p >Skills</p>
+                <Link className="nav-link" href="#home">
+                    <p>Home</p>
                 </Link>
-                <Link className="nav-link" href="#experience">
-                    <p >Experience</p>
+                <Link className="nav-link" href="#problem">
+                    <p>Problem</p>
                 </Link>
-                <Link className="nav-link" href="#projects">
-                    <p>Projects</p>
+                <Link className="nav-link" href="#demo">
+                    <p>Demo</p>
                 </Link>
-                <Link className="nav-link" href="#contact">
-                    <p >Contact</p>
+                <Link className="nav-link" href="#shop">
+                    <p>Shop</p>
                 </Link>
-                <div className='nav-button pointer' style={buttonStyle} onClick={handleClick}>
+                <div className='glow-button nav-button pointer' style={buttonStyle} onClick={handleClick}>
                     <p className='nav-button-text' style={buttonText}>Buy now</p>
                 </div>
             </div>

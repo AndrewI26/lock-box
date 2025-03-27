@@ -1,76 +1,69 @@
-import Image from "next/image";
 import Navbar from "./Navbar";
 
 export default function Hero() {
     const heroStyle = {
         height: "100vh",
-        width: "100vw",
-        background: "url(swipe.svg)",
-        backgroundSize: "119% 100%",
-        backgroundPosition: "50%",
+        width: "100%",
     }
     const heroWrapper = {
         display: "flex",
         padding: "0 10vw",
-        height: "90vh",
+        height: "100vh",
         alignItems: "center",
     }
-    const leftBox = {
-        width: "65%",
-    }
-    const rightBox = {
-        width: "35%",
+    const mainBox = {
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center",
     }
     const header = {
-        marginTop: "-5vw", // to make up for navbar
-        fontSize: "75px",
+        marginTop: "5vw",
+        fontSize: "6.5rem",
         fontWeight: "900",
-        letterSpacing: "-5%",
-        lineHeight: "100%",
+        lineHeight: "115%",
         marginBottom: "2rem",
     }
     const info = {
         width: "40vw",
-        lineHeight: "200%",
+        lineHeight: "150%",
+        color: "grey",
+        fontSize: "1.3rem"
     }
     const btnWrapper = {
-        marginTop: "2vh"
+        marginTop: "40px",
+        display: "flex",
+        gap: "30px",
+        justifyContent: "center",
     }
     const btn1 = {
-        fontSize: "1.3rem",
+        fontSize: "1.1rem",
         borderRadius: "10px",
         fontWeight: "600",
-        padding: "1rem 2rem",
+        padding: ".7rem 1.5rem",
+        color: "white",
+        background: "black",
+    }
+    const btn2 = {
+        fontSize: "1.1rem",
+        borderRadius: "10px",
+        fontWeight: "600",
+        padding: ".7rem 1.5rem",
         color: "black",
         background: "white",
-    }
-    const imageStyle = {
-        width: "400px",
-        height: "auto",
-        marginLeft: "auto",
     }
     return (
         <div style={heroStyle}>
             <Navbar />
             <div style={heroWrapper}>
-                <div style={leftBox}>
-                    <h1 style={header}>Less <span className="grad-text">distractions.</span> <br></br>More <span className="grad-text">rewards.</span></h1>
-                    <p style={info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id nunc eget orci fermentum tempor. Quisque ac arcu non ex cursus condimentum. Nunc tortor sapien, porttitor vel mi vitae, elementum ullamcorper eros. Maecenas facilisis tortor.</p>
+                <div style={mainBox}>
+                    <h1 style={header}>Stop wasting time. <br></br>Get <span className="grad-text">LockBox.</span></h1>
+                    <p style={info}>Take back control of your life with LockBox. Stop the mindless scrolling and endless procrastination. All of this can be done with a simple tap!</p>
                     <div style={btnWrapper}>
-                        <button style={btn1}>Buy now</button>
+                        <button className="glow-button" style={btn1}>Download</button>
+                        <button className="glow-button" style={btn2}>Buy now</button>
                     </div>
-                </div>
-                <div style={rightBox}>
-                    <Image 
-                        src="/iphonemock.png"
-                        alt="iphone mockup"
-                        width={100}
-                        height={100}
-                        style={imageStyle}
-                        quality={100}
-                        unoptimized
-                        priority
-                    />
                 </div>
             </div>
         </div>
