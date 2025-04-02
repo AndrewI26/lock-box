@@ -1,4 +1,6 @@
+import Demo from "./_components/Demo";
 import Hero from "./_components/Hero";
+import HowItWorks from "./_components/HowItWorks";
 import Problem from "./_components/Problem";
 import Shop from "./_components/Shop";
 
@@ -7,7 +9,10 @@ export default function Home() {
     <div className="font-[family-name:var(--font-maven-pro)]">
       <main className="flex flex-col">
         <Hero />
+    
         <Problem />
+        <Demo />
+        <HowItWorks />
         <Shop />
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">

@@ -25,6 +25,8 @@ export default function Problem() {
         maxWidth: "1000px",
         textAlign: "center",
         marginTop: "10vh",
+        borderRadius: "15px",
+        gap: "2rem"
     }
     const titleStyle = {
         fontSize: "1.2rem"

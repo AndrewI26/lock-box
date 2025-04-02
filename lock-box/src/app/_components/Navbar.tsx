@@ -18,6 +18,12 @@ export default function Navbar() {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
+        background: "rgba(255, 255, 255, 0.01)",
+        boxShadow: "0 8px 32px 0 rgba(4, 4, 4, 0.05)",
+        backdropFilter: "blur( 4.5px )",
+        WebkitBackdropFilter: "blur( 4.5px )",
+        borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+        zIndex: "1000"
     }
     const buttonStyle = {
         padding: ".7rem 1.2rem",

@@ -44,6 +44,7 @@ export default function Hero() {
         padding: ".7rem 1.5rem",
         color: "white",
         background: "black",
+        zIndex: "1",
     }
     const btn2 = {
         fontSize: "1.1rem",
@@ -52,6 +53,7 @@ export default function Hero() {
         padding: ".7rem 1.5rem",
         color: "black",
         background: "white",
+        zIndex: "1"
     }
     return (
         <div style={heroStyle}>
