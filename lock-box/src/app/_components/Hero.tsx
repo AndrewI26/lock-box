@@ -56,7 +56,7 @@ export default function Hero() {
         zIndex: "1"
     }
     return (
-        <div style={heroStyle}>
+        <div id="home" style={heroStyle}>
             <Navbar />
             <div style={heroWrapper}>
                 <div style={mainBox}>

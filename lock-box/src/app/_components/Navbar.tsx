@@ -71,6 +71,9 @@ export default function Navbar() {
                 <Link className="nav-link" href="#demo">
                     <p>Demo</p>
                 </Link>
+                <Link className="nav-link" href="#testimonials">
+                    <p>Testimonials</p>
+                </Link>
                 <Link className="nav-link" href="#shop">
                     <p>Shop</p>
                 </Link>

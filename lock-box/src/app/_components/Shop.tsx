@@ -1,3 +1,4 @@
+import { Hedvig_Letters_Sans } from "next/font/google"
 import Image from "next/image"
 export default function Shop() {
     const shopContainer = {
@@ -6,21 +7,23 @@ export default function Shop() {
     }
     const flexStyle = {
         display: "flex",
-        background: "rgb(23, 23, 23)",
+        background: "rgb(84, 84, 84)",
         maxWidth: "900px",
         margin: "auto",
         border: "solid 2px rgb(84, 84, 84)",
         borderRadius: "10px",
-        alignItems: "fill-content"
+        alignItems: "center",
     }
     const imageStyle = {
-        width: "100%",
-        height: "auto",
+        width: "auto",
+        height: "446px",
         background: "rgb(84, 84, 84)",
     }
     const infoStyle = {
         width: "100%",
-        padding: "5%"
+        padding: "5%",
+        background: "rgb(23, 23, 23)",
+        borderRadius: "10px"
     }
     const productTitle = {
         fontSize: "1.5rem",
@@ -45,10 +48,11 @@ export default function Shop() {
     return (
         <div id="shop" style={shopContainer}>
             <div style={flexStyle}>
-                <Image src="/lockboxproduct.png" alt="LockBox product" style={imageStyle} quality={100} width={100} height={100} />
+                <Image src="/lockboxproduct.png" alt="LockBox product" style={imageStyle} quality={100} width={445} height={445} />
                 <div style={infoStyle}>
                     <p style={productTitle}>LockBox</p>
                     <p style={desc}>One LockBox to block apps on a phone with the app. </p>
+                    <br></br>
                     <p style={desc}><b>Sleek design:</b> LockBox is built with high quality aluminum, and is made with a clean design.</p>
                     <p style={desc}><b>Portable:</b> LockBox is 10cm x 9cm x 3cm so you can bring it anywhere that needs focus!.</p>
                     <p style={desc}><b>Effective:</b> Locking apps with a phyiscal device is much more effective than simply disabling apps on your phone.</p>

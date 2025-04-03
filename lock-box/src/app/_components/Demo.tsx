@@ -7,6 +7,9 @@ export default function Demo() {
         alignItems: "center",
         padding: "7rem",
         textAlign: "center",
+        background: "url(swipe.svg)",
+        backgroundSize: "120% 100%",
+        backgroundPosition: "center",
     }
     const solution = {
         width: "5rem",
@@ -23,7 +26,7 @@ export default function Demo() {
     }
     const productImage = {
         height: "auto",
-        width: "700px",
+        width: "500px",
         margin: "auto"
     }
     const imageWrapper: CSSProperties = {
@@ -32,7 +35,7 @@ export default function Demo() {
         border: "solid pink 4px"
     }
     return (
-        <div style={container}>
+        <div id="demo" style={container}>
             <p className="tag" style={solution}>Solution</p>
             <p className="section-title">Introducing LockBox</p>
             <p>Stop your procrastination with this clean sleek design.</p>
