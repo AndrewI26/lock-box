@@ -1,5 +1,10 @@
+'use client'
 import Image from "next/image"
 import { CSSProperties } from "react"
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { blob } from "stream/consumers";
+
+
 export default function Demo() {
     const container = {
         display: "flex",
@@ -7,9 +12,9 @@ export default function Demo() {
         alignItems: "center",
         padding: "7rem",
         textAlign: "center",
-        background: "url(swipe.svg)",
         backgroundSize: "120% 100%",
         backgroundPosition: "center",
+        height: "120vh"
     }
     const solution = {
         width: "5rem",
@@ -23,6 +28,14 @@ export default function Demo() {
         display: "absolute",
         top: "0",
         height: "auto",
+    }
+    const blobStyle = {
+        position: "relative",
+        width: 800,
+        height: 800,
+        zIndex: "-999",
+        top: -700,
+        right : 0,
     }
     const productImage = {
         height: "auto",
@@ -39,7 +52,16 @@ export default function Demo() {
             <p className="tag" style={solution}>Solution</p>
             <p className="section-title">Introducing LockBox</p>
             <p>Stop your procrastination with this clean sleek design.</p>
-            <Image style={productImage} src="/lockboxproduct.png" alt="Lock box product image" z-index={100} width={700} height={700}/>
+            <div>
+                <Image style={productImage} src="/lockboxproduct.png" alt="Lock box product image" z-index={100} width={700} height={700}/>
+                <DotLottieReact
+                    style={blobStyle}
+                    src="https://lottie.host/9178ee12-a5dd-45e8-afb1-827d35045b14/gHq0l6YL7l.lottie"
+                    loop
+                    autoplay
+                />
+            </div>
+            
         </div>
     )
 }

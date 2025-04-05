@@ -28,7 +28,7 @@ html, body {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .nav-link {
@@ -90,7 +90,7 @@ body {
 }
 .section-title {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 600;
   margin: 1rem;
 }
 .section-text {

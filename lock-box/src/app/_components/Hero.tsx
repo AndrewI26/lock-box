@@ -24,6 +24,7 @@ export default function Hero() {
         fontWeight: "900",
         lineHeight: "115%",
         marginBottom: "2rem",
+        fontFamily: "var(--font-inter)"
     }
     const info = {
         width: "40vw",
